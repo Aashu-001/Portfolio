@@ -197,6 +197,4 @@ This portfolio template is open source and available for personal and commercial
 - **Phone**: +91 6396915820
 - **Location**: Greater Noida, India
 
----
 
-Made with ❤️ using React & Vite
