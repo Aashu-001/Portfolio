@@ -1,0 +1,117 @@
+.education-timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.education-timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--accent-color) 0%, var(--accent-light) 50%, transparent 100%);
+}
+
+.education-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 100px;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 24px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background-color: var(--accent-color);
+  border: 3px solid var(--primary-color);
+  border-radius: 50%;
+}
+
+.education-content {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(96, 165, 250, 0.05));
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.education-content:hover {
+  border-color: var(--accent-color);
+  transform: translateX(10px);
+}
+
+.degree {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-bottom: 10px;
+}
+
+.institution {
+  font-size: 1.1rem;
+  color: var(--accent-light);
+  font-weight: 600;
+}
+
+.location {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.year {
+  color: var(--accent-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.details {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+.coursework {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid var(--border-color);
+}
+
+.coursework h4 {
+  color: var(--accent-light);
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.coursework-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.course-tag {
+  background-color: rgba(59, 130, 246, 0.2);
+  color: var(--accent-light);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+@media (max-width: 768px) {
+  .education-timeline::before {
+    left: 10px;
+  }
+
+  .timeline-marker {
+    left: 4px;
+  }
+
+  .education-item {
+    padding-left: 50px;
+  }
+}
