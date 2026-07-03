@@ -30,7 +30,7 @@ function Projects() {
         'Deployed on Vercel with cloud-based delivery',
         'Zero-downtime releases and scalable infrastructure'
       ],
-      link: '#',
+      link: 'https://health-nexus-frontend.vercel.app/',
       github: 'https://github.com/Aashu-001/HealthNexus-backend'
     }
   ]
